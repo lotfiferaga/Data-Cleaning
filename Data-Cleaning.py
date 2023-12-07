@@ -29,4 +29,15 @@ df.drop(to_drop, inplace = True, axis = 1)
 df.head(10)
 
 
+# renaming the columns
+new_name = {'age': 'Age',
+           'sex': 'Sex',
+           'trestbps': 'Bps',
+           'chol': 'Cholesterol'
+            }
+
+df.rename(columns = new_name, inplace = True)
+df.head()
+
+
 
