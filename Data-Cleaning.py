@@ -39,5 +39,11 @@ new_name = {'age': 'Age',
 df.rename(columns = new_name, inplace = True)
 df.head()
 
+# replacing the values with new significant codes
+replace_values = {0: 'F', 1: 'M'}
+
+df = df.replace({"Sex": replace_values})                                                                                             
+
+df.head()
 
 
