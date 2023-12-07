@@ -13,4 +13,20 @@ df.head(10)
 df.tail(10)
 
 
+# dropping unused columns
+to_drop = ['cp',
+          'fbs',
+          'restecg',
+          'thalach',
+          'exang',
+          'oldpeak',
+          'slope',
+          'thal',
+           'target', 
+          'ca']
+
+df.drop(to_drop, inplace = True, axis = 1)
+df.head(10)
+
+
 
